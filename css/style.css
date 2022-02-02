@@ -1,12 +1,41 @@
+:root {
+  --basic-bg-color: #000000;
+  --basic-text-color: #ffffff;
+}
+
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: var(--basic-text-color);
+  text-transform: uppercase;
+  background-color: var(--basic-bg-color);
+  /* background-image: url("img/bg.jpg"); */
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.site-navigation__list {
+  list-style: none;
+}
+
+.site-navigation__btn {
+  text-decoration: none;
+}
