@@ -32,8 +32,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.container,
+.main-header {
+  border: 1px solid white;
+  width: 900px;
+  margin: 0 auto;
+}
+
 .site-navigation__list {
   list-style: none;
+}
+
+.site-navigation__item {
+  display: flex;
 }
 
 .site-navigation__btn {
