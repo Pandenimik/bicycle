@@ -1,6 +1,7 @@
 :root {
-  --basic-bg-color: #000000;
-  --basic-text-color: #ffffff;
+  --basic-bg-color: #ffffff;
+  --basic-text-color: #000000;
+  --basic-border-color: #a5a4a4;
 }
 
 .visually-hidden {
@@ -32,12 +33,48 @@ body {
   background-repeat: no-repeat;
 }
 
-.container,
-.main-header {
-  border: 1px solid white;
-  width: 900px;
+.container {
+  width: 1200px;
   margin: 0 auto;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 290px 600px 290px;
+  grid-template-rows:
+    100px
+    1fr
+    50px;
+  grid-gap: 10px;
+  min-height: 100vh;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+  border: 1px solid var(--basic-border-color);
+  padding-left: 20px;
+}
+
+.site-navigation {
+  grid-column: 1 / 2;
+  border: 1px solid var(--basic-border-color);
+}
+
+.main-content {
+  grid-column: 2 / 3;
+  border: 1px solid var(--basic-border-color);
+}
+
+.links-navigation {
+  grid-column: 3 / -1;
+  border: 1px solid var(--basic-border-color);
+}
+
+.main-footer {
+  grid-column: 1 / -1;
+  border: 1px solid var(--basic-border-color);
+}
+
 
 .site-navigation__list {
   list-style: none;

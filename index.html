@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,33 +29,47 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link  href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+
+<body class="grid container">
   <h1 class="visually-hidden">Главная страница сайта</h1>
+  
   <header class="main-header">
-    <h2 class="visually-hidden">Навигация по сайту</h2>
-    <nav class="site-navigation">
-      <h3 class="visually-hidden">Меню навигации по сайту</h3>
-      <ul class="site-navigation__list">
-        <li class="site-navigation__item"><a href="#" class="site-navigation__btn site-navigation__btn_current">Главная</a></li>
-        <li class="site-navigation__item"><a href="#" class="site-navigation__btn">Уход и ТО</a></li>
-        <li class="site-navigation__item"><a href="#" class="site-navigation__btn">Тюнинг</a></li>
-        <li class="site-navigation__item"><a href="#" class="site-navigation__btn">Путешествия</a></li>
-      </ul>
-    </nav>
+    <h2 class="visually-hidden">Заголовок сайта</h2>
+    <h2>Велосипед Forward Next 3.0 disc 27.5"</h2>
   </header>
-  <main class="container">
-    <h2 class="visually-hidden">Основная часть страницы</h2>
-    <section class="wellcome-text">
-      <h3 class="visually-hidden">Описание сайта</h3>
-      <p>Сайт про "один" велосипед.</p>
-    </section>
-    <section class="interactive-content">
-      <h3 class="visually-hidden">Здесь будет какой нибуть интерактив...</h3>
+  
+  <nav class="site-navigation">
+    <h2 class="visually-hidden">Меню навигации по сайту</h3>
+    <ul class="site-navigation__list">
+      <li class="site-navigation__item"><a href="#" class="site-navigation__btn site-navigation__btn_current">Главная</a></li>
+      <li class="site-navigation__item"><a href="#" class="site-navigation__btn">Уход и ТО</a></li>
+      <li class="site-navigation__item"><a href="#" class="site-navigation__btn">Тюнинг</a></li>
+      <li class="site-navigation__item"><a href="#" class="site-navigation__btn">Путешествия</a></li>
+    </ul>
+  </nav>
+  
+  <main class="main-content">
+    <h2 class="visually-hidden">Слайдер изображений велосипеда</h2>
+    <section class="slider">
+      <img src='./img/forward-next-3.0-photo№1.jpg' alt='Велсипед Forward Next 3.0 disc 27.5" вид с боку' width="598px" height="338">
     </section>
   </main>
+  
+  <aside class="links-navigation">
+    <h2 class="visually-hidden">Полезные "вело" ссылки</h2>
+      <ul class="links-navigation__list">
+        <li class="links-navigation__item"><a href="#" class="list-navigation__btn">Сайт Котовского</a></li>
+        <li class="links-navigation__item"><a href="#" class="list-navigation__btn">YouTube канал</a></li>
+        <li class="links-navigation__item"><a href="#" class="list-navigation__btn">Еще сайт</a></li>
+        <li class="links-navigation__item"><a href="#" class="list-navigation__btn">И еще ченить полезное</a></li>
+      </ul>
+  </aside>
+  
   <footer class="main-footer">
     <h2 class="visually-hidden">Контактная информация</h2>
   </footer>
+  
   <script src="js/script.js"></script>
+
 </body>
 </html>
