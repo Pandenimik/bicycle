@@ -42,7 +42,11 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 290px 600px 290px;
+  grid-template-areas:
+    'main-header     main-header  main-header'
+    'site-navigation main-content links-navigation'
+    'main-footer     main-footer  main-footer';
+  grid-template-columns: 20% 1fr 20%;
   grid-template-rows:
     100px
     1fr
@@ -52,36 +56,36 @@ body {
 }
 
 .main-header {
-  grid-column: 1 / -1;
+  grid-area: main-header;
   border: 1px solid var(--basic-border-color);
   padding-left: 20px;
   background-color: var(--field-bg-color);
 }
 
 .site-navigation {
-  grid-column: 1 / 2;
+  grid-area: site-navigation;
   border: 1px solid var(--basic-border-color);
   background-color: var(--field-bg-color);
 }
 
 .main-content {
-  grid-column: 2 / 3;
+  grid-area: main-content;
   border: 1px solid var(--basic-border-color);
   background-color: var(--field-bg-color);
 }
 
-.slider__img {
+.card__img {
   max-width: 100%;
 }
 
 .links-navigation {
-  grid-column: 3 / -1;
+  grid-area: links-navigation;
   border: 1px solid var(--basic-border-color);
   background-color: var(--field-bg-color);
 }
 
 .main-footer {
-  grid-column: 1 / -1;
+  grid-area: main-footer;
   border: 1px solid var(--basic-border-color);
   background-color: var(--field-bg-color);
 }
