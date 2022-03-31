@@ -51,16 +51,59 @@
   <main class="main-content">
     <h2 class="visually-hidden">Информация о предмете</h2>
     <section class="card">
-      <img class="card__img" src='./img/forward-next-3.0-photo№1.jpg' alt='Велосипед Forward Next 3.0 disc 27.5" вид с боку'>
-      <dl class="card-description-list">
-        <dt>Год выпуска</dt>
-        <dd>2018</dd>
+      <div class="slider">
 
-        <dt>Размер рамы</dt>
-        <dd>19"</dd>
+        <!-- Первый слайд -->
+        <div class="slider__item">
+          <img class="slider__img" src='./img/forward-next-3.0-photo№1.jpg' alt='Велосипед Forward Next 3.0 disc 27.5" вид с боку'>
+        </div>
+      
+        <!-- Второй слайд -->
+        <div class="slider__item">
+          <img class="slider__img" src='./img/forward-next-3.0-photo№2.jpg' alt='Велосипед Forward Next 3.0 disc 27.5" вид с переди'>
+        </div>
+      
+        <!-- Кнопки-стрелочки -->
+        <a class="slider__previous" onclick="previousSlide()">&#10094;</a>
+        <a class="slider__next" onclick="nextSlide()">&#10095;</a>
+      </div>
+      
+      <dl class="card-dl">
+        <dt class="card-dl__dt-1-row">Год выпуска</dt>
+        <dd class="card-dl__dd">2018</dd>
 
-        <dt>Диаметр колеса</dt>
-        <dd>27.5"</dd>
+        <dt class="card-dl__dt-1-row">Рама</dt>
+        <dd class="card-dl__dd">Алюминиевая (6061) 19"</dd>
+
+        <dt class="card-dl__dt-1-row">Диаметр колеса</dt>
+        <dd class="card-dl__dd">27.5"</dd>
+
+        <dt class="card-dl__dt-2-row">Тормозная система</dt>
+        <dd class="card-dl__dd">Диск, гидравлика X-Spark HD-M220, 160/160 мм</dd>
+
+        <dt class="card-dl__dt-2-row">Вилка</dt>
+        <dd class="card-dl__dd">Surly</dd>
+
+        <dt class="card-dl__dt-2-row">Переключатель (задний)</dt>
+        <dd class="card-dl__dd">Shimano Tourney <br> RD-TX800</dd>
+
+        <dt class="card-dl__dt-3-row">Шифтер</dt>
+        <dd class="card-dl__dd">Рычажный Microshift TS38</dd>
+
+        <dt class="card-dl__dt-3-row">Рулевая колонка</dt>
+        <dd class="card-dl__dd">1 1/8" полуинтегрированная безрезьбовая</dd>
+
+        <dt class="card-dl__dt-3-row">Подсидельный штырь</dt>
+        <dd class="card-dl__dd">30.4 x 350мм</dd>
+
+        <dt class="card-dl__dt-4-row">Кассета</dt>
+        <dd class="card-dl__dd">FWD KDF-CS832, 11-32T, кассета</dd>
+
+        <dt class="card-dl__dt-4-row">Цепь</dt>
+        <dd class="card-dl__dd">KMC Z72</dd>
+
+        <dt class="card-dl__dt-4-row">Покрышки</dt>
+        <dd class="card-dl__dd">CST C-1918 27.5x2.10" (27TPI)</dd>
 
 
       </dl>
