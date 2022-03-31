@@ -162,7 +162,7 @@ body {
   color: var(--basic-text-color);
   display: block;
   background-color: var(--btn-bg-color);
-  padding: 5px;
+  padding: 5px 0 5px 20px;
 }
 
 .site-navigation__btn_current {
