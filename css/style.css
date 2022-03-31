@@ -6,6 +6,7 @@
   --alt-text-color: #ffa500;
   --interactive-elements-color: #ffa500;
   --basic-border-color: #a5a4a4;
+  --links-color: #000000;
 }
 
 .visually-hidden {
@@ -85,6 +86,19 @@ body {
   grid-area: links-navigation;
   border: 1px solid var(--basic-border-color);
   background-color: var(--field-bg-color);
+}
+
+.links-navigation__header {
+  margin-left: 20px;
+}
+
+.links-navigation__btn,
+.links-navigation__btn:active {
+  color: var(--links-color);
+}
+
+.links-navigation__btn:hover {
+  color: var(--interactive-elements-color);
 }
 
 .main-footer {
