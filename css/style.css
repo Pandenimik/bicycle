@@ -7,6 +7,7 @@
   --interactive-elements-color: #ffa500;
   --basic-border-color: #a5a4a4;
   --links-color: #000000;
+  --border-radius: 20px;
 }
 
 .visually-hidden {
@@ -43,6 +44,7 @@ body {
   margin: 0 auto;
 }
 
+/* Описание основых грид-блоков страниц сайтов */
 .grid {
   display: grid;
   grid-template-areas:
@@ -78,16 +80,14 @@ body {
   padding: 0px;
 }
 
-.card__img {
-  max-width: 100%;
-}
-
 .links-navigation {
   grid-area: links-navigation;
   border: 1px solid var(--basic-border-color);
   background-color: var(--field-bg-color);
 }
+/* ----------------------------------------------------- */
 
+/* Оформление меню навигации по дополнительному внешнему контенту*/
 .links-navigation__header {
   margin-left: 20px;
 }
@@ -106,7 +106,9 @@ body {
   border: 1px solid var(--basic-border-color);
   background-color: var(--field-bg-color);
 }
+/* ----------------------------------------------------------------- */
 
+/* Описание грид элементов для основного раздела главной страницы */
 .main-card-dl {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -144,7 +146,9 @@ body {
   margin-top: 30px;
   text-align: center;
 }
+/* ------------------------------------------------------- */
 
+/* Оформление меню навигации сайта */
 .site-navigation__list {
   list-style: none;
   padding: 0;
@@ -169,6 +173,7 @@ body {
 .site-navigation__btn_current {
   border-right: 5px solid var(--interactive-elements-color);
 }
+/* ---------------------------------------------------------- */
 
 /* Слайдер: */
 .slider {
@@ -232,4 +237,53 @@ body {
   to {
     opacity: 1;
   }
+}
+/* Конец оформления слайдера---------------------------- */
+
+/* Оформление секции с карточками статей*/
+
+/* Оформление грид-каркаса для карточек статей */
+.article-list-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 20px 0 20px;
+  padding-top: 20px;
+}
+
+/* Оформление грид-элементов карточек статей */
+.article-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+    "article-card__img article-card__header";
+  height: 200px;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  border: solid 1px var(--basic-border-color);
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--basic-text-color);
+}
+
+.article-card:hover {
+  color: var(--interactive-elements-color);
+  border: solid 1px var(--interactive-elements-color);
+  box-shadow: 0 0 5px var(--interactive-elements-color);
+}
+
+.article-card__img {
+  grid-area: article-card__img;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: rgb(210, 25, 216);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.article-card__header {
+  grid-area: article-card__header;
+  margin: 0;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  padding: 20px;
+  text-transform: none;
 }
