@@ -276,7 +276,6 @@ body {
   grid-area: article-card__img;
   max-height: 100%;
   max-width: 100%;
-  background-color: rgb(210, 25, 216);
   border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
@@ -287,3 +286,21 @@ body {
   padding: 20px;
   text-transform: none;
 }
+
+/* Стили для оформления элементов статей */
+
+.article-header {
+  margin: 20px;
+}
+
+.article-text {
+  margin: 20px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.article-image {
+  max-width: 100%;
+}
+
+/* ------------------------------------ */
