@@ -53,9 +53,9 @@ body {
     'main-footer     main-footer  main-footer';
   grid-template-columns: 20% 1fr 20%;
   grid-template-rows:
-    100px
+    auto
     1fr
-    50px;
+    40px;
   grid-gap: 10px;
   min-height: 100vh;
 }
